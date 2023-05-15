@@ -255,6 +255,7 @@ useEffect(() => {
                           </div>
                       </section>
                   </div>
+                  <button>{latestText}</button>
 
               </form>
           </div>
