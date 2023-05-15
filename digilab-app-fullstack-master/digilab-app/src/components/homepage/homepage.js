@@ -26,7 +26,7 @@ const Homepage = ({ setLoginUser, admin, setFormButtonText }) => {
   }
 
   axios
-    .post("http://localhost:9002/update", formData)
+    .post("https://digilab-app-fullstack-1.divishavarma.repl.co/update", formData)
     .then((res) => {
       console.log(res.data);
       // Display success alert
