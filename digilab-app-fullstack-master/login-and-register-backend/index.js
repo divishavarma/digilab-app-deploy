@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use("/uploads", express.static("login-and-register-backend/uploads"));
+app.use("/uploads", express.static("uploads"));
 mongoose.connect("mongodb://127.0.0.1:27017/adminRegisterDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,

@@ -44,7 +44,7 @@ useEffect(() => {
   axios
     .get("https://digilab-app-fullstack-1.divishavarma.repl.co/latest-image-url")
     .then((res) => {
-      const latestImageURL = res.data.image;
+      const latestImageURL = "https://digilab-app-fullstack-1.divishavarma.repl.co/" + res.data.image;
       setLatestImageURL(latestImageURL);
     })
     .catch((error) => {
