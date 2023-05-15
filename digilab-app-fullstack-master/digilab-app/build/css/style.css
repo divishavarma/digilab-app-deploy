@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: black;
+    --tertiary-color: #fff;
+}
+
+.dark-theme {
+    --primary-color: #1C2534;
+    --secondary-color: #fff;
+    --tertiary-color: #1E1E1E;
+}
+
+.page-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: var(--tertiary-color);
+}
+
+.wizard-v1-content {
+    background: var(--primary-color);
+    width: 648px;
+    height: auto;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 100px 0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: flex;
+}
+
+.wizard-v1-content .wizard-form {
+    padding: 10px;
+}
+
+.form-register .steps ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.form-register .steps li,
+.form-register .steps li.current {
+    outline: none;
+    position: relative;
+    padding-bottom: 3px;
+    padding-right: 90px;
+}
+
+.form-register .steps li:last-child {
+    padding-right: 0;
+}
+
+.form-register .steps li .current-info {
+    display: none;
+}
+
+.form-register .steps li::before {
+    position: absolute;
+    content: '';
+    background: #DAE0E6;
+    width: 100px;
+    height: 6px;
+    top: 20%;
+    left: 40%;
+}
+
+.form-register .steps li:last-child::before {
+    content: none;
+}
+
+.form-register .steps li a {
+    text-decoration: none;
+    outline: none;
+}
+
+.form-register .steps li a .title {
+    text-align: center;
+}
+
+.form-register .steps li a .title span {
+    display: block;
+    font-size: 16px;
+}
+
+.form-register .steps li a .title .step-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #5F6D7E;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+    color: #5F6D7E;
+    font-size: 20px;
+}
+
+.form-register .steps li a .step-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-register .steps li.current a .step-icon,
+.form-register .steps li.current a:active .step-icon,
+.form-register .steps li.done a .step-icon,
+.form-register .steps li.done a:active .step-icon {
+    border: 2px solid #648EF7;
+    color: #648EF7;
+}
+
+.form-register .steps li.current a .step-icon,
+.form-register .steps li.current a:active .step-icon {
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-register .steps li a .step-number {
+    color: #666;
+    font-weight: 400;
+    padding: 17px 0 8px;
+}
+
+.form-register .steps li a .step-text {
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.form-register .content {
+    border-radius: 5px;
+    padding: 32px 115px 23px 75px;
+}
+
+.form-register .content h2 {
+    display: none;
+}
+
+.inner .form-row {
+    display: flex;
+    margin: 0 -13px;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.inner .form-row.form-row-2 {
+    width: 80.6%;
+}
+
+.inner .form-row .form-holder {
+    width: 50%;
+    padding: 0 13px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.inner .form-row .form-holder.form-holder-2 {
+    width: 100%;
+    position: relative;
+}
+
+.inner .form-row .form-holder.form-holder-3 {
+    width: 100%;
+}
+
+.inner .form-row .form-holder label {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 11px;
+    display: block;
+    color: var(--secondary-color);
+}
+
+.inner .form-row .form-holder input,
+.inner .form-row .form-holder select {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    appearance: unset;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #DAE0E6;
+    margin-bottom: 10px;
+}
+
+.inner .form-row .form-holder input::placeholder {
+    font-size: 15px;
+}
+
+.inner .form-row .form-holder input:-ms-input-placeholder {
+    font-size: 15px;
+}
+
+.inner .form-row .form-holder input::-ms-input-placeholder {
+    font-size: 15px;
+}
+
+.inner .form-row .form-holder select {
+    background: var(--primary-color) url('../images/wizard_v2_icon.png') no-repeat scroll;
+    background-position: right 16px center;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.inner .form-row .form-holder.form-holder-2 .select-btn {
+    top: 27%;
+    right: 6.5%;
+}
+
+.inner .form-row .form-holder .ui-datepicker-trigger {
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 19px;
+    position: absolute;
+    cursor: pointer;
+    right: 10.5%;
+    top: 27.5%;
+    outline: none;
+}
+
+.inner h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin: 0 0 11px;
+}
+
+.inner .form-row.table-responsive {
+    border: none;
+    border-radius: 5px;
+    padding: 24px 26px 31px;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.inner .table-responsive .table {
+    width: 100%;
+}
+
+.inner .table-responsive tbody {
+    text-align: left;
+}
+
+.inner .table-responsive tr.space-row>td,
+.inner .table-responsive tr.space-row>th {
+    padding-bottom: 18px;
+    color: var(--secondary-color);
+}
+
+.inner .table-responsive tbody td {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.actions ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions ul li {
+    padding: 0;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.19);
+    display: inline-flex;
+    height: 50px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    background: #437EF7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-right: 35px;
+}
+
+.actions ul li:first-child {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.actions ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.form-text {
+    color: var(--secondary-color);
+}
+
+.form-check-label {
+    color: var(--secondary-color);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1199px) {
+    .wizard-v1-content {
+        margin: 180px 20px;
+    }
+    .form-register .content {
+        padding: 32px 75px 23px 75px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .inner .form-row {
+        flex-direction: column;
+        margin: 0;
+    }
+    .inner .form-row.form-row-2 {
+        width: 100%;
+    }
+    .inner .form-row .form-holder {
+        padding: 0;
+        width: 100%;
+    }
+    .inner .form-row .form-holder .ui-datepicker-trigger {
+        right: 5%;
+    }
+    .inner .form-row .form-holder .select-btn {
+        right: 6%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wizard-v1-content .wizard-form {
+        padding: 40px 20px;
+        width: auto;
+    }
+    .form-register .content {
+        padding: 32px 30px 23px 30px;
+    }
+    .form-register .steps li,
+    .form-register .steps li.current {
+        padding-right: 5px;
+    }
+    .form-register .steps li::before {
+        width: 65px;
+        top: 15%;
+        left: 70%;
+    }
+    .form-register .steps li.current::after {
+        left: 28%;
+    }
+    .inner .form-row .form-holder .ui-datepicker-trigger {
+        right: 0;
+    }
+    .inner .form-row .form-holder .select-btn {
+        right: 6.5%;
+    }
+    .inner .table-responsive tr.space-row,
+    .inner .table-responsive tbody th {
+        display: block;
+    }
+    .inner .table-responsive tr.space-row>th {
+        padding-bottom: 10px;
+    }
+    .inner .table-responsive tr.space-row>td {
+        padding-bottom: 30px;
+    }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.logo-container img {
+    width: 130px;
+    height: 120px;
+    border-radius: 7%;
+}
+/* .logo-container {
+  display: flex;
+  justify-content: center;
+} */
+/* .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/*
+.inner .form-row .form-holder select {
+  background: var(--primary-color) url('../images/wizard_v2_icon.png') no-repeat scroll;
+  background-position: right 16px center;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.inner .form-row .form-holder select:focus {
+  color: var(--primary-color);
+}
+
+.inner .form-row .form-holder select option {
+  background: var(--secondary-color);
+  color: var(--secondary-color);
+} */

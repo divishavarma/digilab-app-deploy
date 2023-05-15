@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digilab App</title>
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/style.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/raleway-font.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/vender/boottrap/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="%PUBLIC_URL%/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.steps.js"></script>
+    <script src="%PUBLIC_URL%/js/main.js"></script>
+    <script src="%PUBLIC_URL%/vendor/bootrap/js/bootstrap.min.js"></script>
+
+    <script>
+      var dark = document.getElementById("dark");
+      dark.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+      }
+    </script>
+
+  </body>
+</html>
